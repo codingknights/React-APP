@@ -4,7 +4,7 @@ function SignIn() {
         <React.Fragment>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your E-Mail here....." aria-describedby="emailHelp" />
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter Your E-Mail here....." aria-describedby="emailHelp" />
                 <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
             </div>
             <label for="inputPassword5" class="form-label text-white">Password</label>

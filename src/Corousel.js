@@ -1,17 +1,39 @@
+import {useState} from 'react'
+import React from 'react';
 import Cards from './Cards'
+
+
+const DemoData = require('./DemoData.js')
+
 function Corousel() {
+    let [loadingState, setLoadingState] = useState(false);
     return (
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" className="carousel slide" >
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                        <Cards className="d-block w-100 container"></Cards>
-                </div> 
-                <div className="carousel-item active">
-                        <Cards className="d-block w-100 container"></Cards>
-                </div>   
-                <div className="carousel-item active">
-                        <Cards className="d-block w-100 container"></Cards>
-                </div>                      
+                 
+                    {DemoData.map(
+                        function (arr) {
+                            return (
+                                <div className="carousel-item active">
+                                    { loadingState!==true &&
+                                <Cards
+                                    className="d-block w-100 container"
+                                    title={arr.title}
+                                    description={arr.processor}
+                                ></Cards>
+                            }
+                            {loadingState===true && 
+                            <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>}
+                                </div>
+                            )
+                        }
+                    )
+                    }
+            
+
+                
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -24,4 +46,5 @@ function Corousel() {
         </div>
     )
 }
+
 export default Corousel

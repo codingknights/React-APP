@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link as ReactLink } from 'react-router-dom';
 const Navbar = function(){
 
 const [click, setClick] = useState(false)
@@ -20,10 +21,10 @@ return (
         
             <ul className={click ? "nav-menu active" : "nav-menu" } >
                 <li className='nav-item' >
-                    <a href='/' >Home</a>
+                    <ReactLink to="/">Home</ReactLink>
                 </li>
                 <li className='nav-item'>
-                    <a href='#about' >About</a>
+                    <ReactLink to="/about">About</ReactLink>
                 </li>
                 <li className='nav-item'>
                     <a href='#testimonials' >Products</a>

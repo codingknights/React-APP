@@ -49,7 +49,7 @@ function Modal() {
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h4 className="modal-title webname" id="exampleModalLabel">SignUp</h4>
+                  <h4 className="modal-title webname" id="exampleModalLabel">Login</h4>
                   <button type="button" className="btn-close light" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div className="modal-body">
