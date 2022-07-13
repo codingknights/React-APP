@@ -51,7 +51,7 @@ function LoginForm() {
             formData.append('password', passwordField.value);
 
             fetch(`${process.env.REACT_APP_BACKEND_ENDPOINT}`, {
-                method: 'GET',
+                method: 'POST',
                 // headers: {"Content-Type": "application/json"},
                 body: formData
             })

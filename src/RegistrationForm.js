@@ -78,7 +78,7 @@ const RegistrationForm = () => {
             fetch(
                 `${process.env.REACT_APP_BACKEND_ENDPOINT}`,
                 {
-                    method: 'GET',
+                    method: 'POST',
                     body: formData
                 }
             )
