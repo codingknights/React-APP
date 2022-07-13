@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import cors from "./cors";
-App.use(cors());
 
 const RegistrationForm = () => {
 
