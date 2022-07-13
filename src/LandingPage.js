@@ -1,5 +1,5 @@
 import React from "react";
-import "./Landing.css"
+
 
 
 
@@ -7,7 +7,6 @@ function LandingPage() {
 const container = document.querySelector(".container");
      return (
         < React.Fragment >
-       
         <div class="container">
             <div class="form-container">
                 <div class="signin-signup">

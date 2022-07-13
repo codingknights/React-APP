@@ -5,6 +5,8 @@ import {BrowserRouter, Switch, Route } from 'react-router-dom';
 import About from './About';
 import LayoutRoute2 from './LayoutRoute2';
 import LandingPage from './LandingPage';
+import RegistrationForm from './RegistrationForm';
+import LoginForm from './LoginForm';
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
           <Switch>
             <LayoutRoute path="/" exact={true} component={Hero} />
             <LayoutRoute path="/about" exact={true} component={About} />
-            <LayoutRoute2 path="/land" exact={true} component={LandingPage}/>
+            <LayoutRoute2 path="/signup" exact={true} component={RegistrationForm}/>
+            <LayoutRoute2 path="/land" exact={true} component={LoginForm}/>
           </Switch>
         </BrowserRouter>
       </React.Fragment>
