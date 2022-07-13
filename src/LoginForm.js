@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
 // Connect to the context (i.e, global state)
 import { UserContext } from './UserContext';
-
+const cors = require('cors')
+app.use(cors())
 
 // RegEx (Regular Expressions)
 const validateEmail = (email) => {

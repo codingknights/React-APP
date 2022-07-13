@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+const cors = require('cors')
+app.use(cors())
 const RegistrationForm = () => {
 
     // RegistrationForm can go through 5 states
