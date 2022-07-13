@@ -76,7 +76,7 @@ const RegistrationForm = () => {
             formData.append('phoneNumber', phoneNumberField.value);
 
             fetch(
-                `${process.env.REACT_APP_BACKEND_ENDPOINT}/users/create`,
+                `${process.env.REACT_APP_BACKEND_ENDPOINT}`,
                 {
                     method: 'POST',
                     body: formData
