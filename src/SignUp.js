@@ -1,4 +1,7 @@
 import React from "react";
+import cors from "cors";
+import App from "./App";
+App.use(cors());
 
 function SignUp() {
     return (
