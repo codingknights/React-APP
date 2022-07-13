@@ -76,7 +76,7 @@ const RegistrationForm = () => {
             formData.append('phoneNumber', phoneNumberField.value);
 
             fetch(
-                `${process.env.url}/users/create`,
+                `https://laptopmanbackend.herokuapp.com/user/create`,
                 {
                     method: 'POST',
                     body: formData
