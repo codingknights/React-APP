@@ -5,7 +5,7 @@ import { Link as ReactLink} from "react-router-dom"
 function Footer() {
     return (
         <React.Fragment>
-            <footer className="py-3 bg-dark">
+            <footer className="py-3 ">
                 <ul className="nav justify-content-center border-bottom pb-3 mb-3 container">
                     <li  className="nav-item "><ReactLink to="/" className="nav-link px-2 text-secondary">Home</ReactLink></li>
                     <li className="nav-item "><ReactLink to="/about" className="nav-link px-2 text-white">About Us</ReactLink></li>

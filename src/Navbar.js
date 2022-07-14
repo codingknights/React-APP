@@ -26,17 +26,13 @@ return (
                 <li className='nav-item'>
                     <ReactLink to="/about">About</ReactLink>
                 </li>
-                <li className='nav-item'>
-                    <a href='#testimonials' >Products</a>
-                </li>
                 
                 <li className="registration nav-item">
                     <button type="button" style={{"padding-right":"5px"}} class="btn btn-outline-light me-2">Login</button>
                     <button type="button" style={{"padding-left":"5px"}} class="btn btn-warning">Sign-up</button>
                 </li>
             </ul>
-            <button type="button" style={{"margin-left":"170px"}}  class="btn btn-outline-light me-2 registration2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Login</button>
-            <button type="button" class="glow-on-hover registration2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign-up</button>
+            <ReactLink to="/signup" s><button tyle={{"margin-left":"220px"}} class="glow-on-hover registration2" >Do we know you?</button></ReactLink>
            
          </nav>
      </div>

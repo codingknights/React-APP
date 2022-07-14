@@ -1,6 +1,4 @@
 import { useState } from 'react';
-const cors = require('cors')
-app.use(cors())
 const RegistrationForm = () => {
 
     // RegistrationForm can go through 5 states
@@ -77,7 +75,7 @@ const RegistrationForm = () => {
             formData.append('phoneNumber', phoneNumberField.value);
 
             fetch(
-                `https://laptopmanbackend.herokuapp.com/user/create`,
+                `${process.env.REACT_APP_BACKEND}/users/create`,
                 {
                     method: 'POST',
                     body: formData

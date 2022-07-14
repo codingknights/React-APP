@@ -1,8 +1,7 @@
 import React, { useState, useContext } from 'react';
 // Connect to the context (i.e, global state)
 import { UserContext } from './UserContext';
-const cors = require('cors')
-app.use(cors())
+
 
 // RegEx (Regular Expressions)
 const validateEmail = (email) => {
@@ -51,7 +50,7 @@ function LoginForm() {
             formData.append('email', emailField.value);
             formData.append('password', passwordField.value);
 
-            fetch(`https://laptopmanbackend.herokuapp.com/user/login`, {
+            fetch(`${process.env.REACT_APP_BACKEND}/users/create`, {
                 method: 'POST',
                 // headers: {"Content-Type": "application/json"},
                 body: formData

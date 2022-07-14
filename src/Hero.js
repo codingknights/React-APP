@@ -11,6 +11,9 @@ const Hero = () => {
             and is specifically designed to enable gaming on the move and in spaces where you
             don’t have access to a desk.</p>
            <Modal></Modal>
+           <button type="button" className="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            View
+          </button>
         </div>
 
       </div>
@@ -21,7 +24,10 @@ const Hero = () => {
             business laptop
             receives a higher-quality product with additional built-in components that can last for
             years.</p>
-          <a className="btn btn-outline-secondary text-white" href="#">Read more</a>
+            <Modal></Modal>
+            <button type="button" className="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            View
+          </button>
         </div>
         <div className="product-device shadow-sm d-none d-md-block"></div>
         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -32,7 +38,10 @@ const Hero = () => {
           <p className="lead fw-normal text-white">Home laptops are battery- or AC-powered personal computers generally smaller
             than
             briefcases that can easily be transported and conveniently used in temporary spaces.</p>
-          <a className="btn btn-outline-secondary text-white" href="#">Read more</a>
+            <Modal></Modal>
+            <button type="button" className="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            View
+          </button>
         </div>
         <div className="product-device shadow-sm d-none d-md-block"></div>
         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>

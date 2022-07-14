@@ -1,18 +1,17 @@
 import {useState} from 'react'
 import React from 'react';
 import Cards from './Cards'
-import { PromiseProvider } from 'mongoose';
 
 
-const GamingLap = require('./GamingLap.js')
+const HomeLap = require('./HomeLap.js')
 
-function Corousel() {
+function Corousel3() {
     let [loadingState, setLoadingState] = useState(false);
     return (
-        <div id="carouselExampleControls" className="carousel slide" >
+        <div id="carouselExampleControls1" className="carousel slide" >
             <div className="carousel-inner">
                  
-                    {GamingLap.map(
+                    {HomeLap.map(
                         function (arr) {
                             return (
                                 <div className="carousel-item active">
@@ -26,23 +25,8 @@ function Corousel() {
                                     storage={arr.StorageAmount}
                                     linka={arr.AmazonLink}
                                     linkb={arr.OtherLink}
-                                    ProcessorBrand={arr.ProcessorBrand}
-                                    ProcessorInfo={arr.ProcessorInfo}
-                                    ScreenSize={arr.ScreenSize}
-                                    RefreshRate={arr.RefreshRate}
-                                    ScreenResolution={arr.ScreenResolution}
-                                    GPUBrand={arr.GPUBrand}
-                                    GPUInfo={arr.GPUInfo}
-                                    GPURAM={arr.GPURAM}
-                                    StorageType={arr.StorageType}
-                                    BatteryCapacity={arr.BatteryCapacity}
-                                    Charger={arr.Charger}
-                                    Dimension={arr.Dimension}
-                                    Weight={arr.Weight}
                                 ></Cards>
                             }
-                           
-                            
                             {loadingState===true && 
                             <div class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
@@ -56,11 +40,11 @@ function Corousel() {
 
                 
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
@@ -68,4 +52,4 @@ function Corousel() {
     )
 }
 
-export default Corousel
+export default Corousel3
