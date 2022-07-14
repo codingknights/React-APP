@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 // Connect to the context (i.e, global state)
 import { UserContext } from './UserContext';
-
+import{Link as ReactLink} from "react-router-dom"
 
 // RegEx (Regular Expressions)
 const validateEmail = (email) => {
@@ -50,7 +50,7 @@ function LoginForm() {
             formData.append('email', emailField.value);
             formData.append('password', passwordField.value);
 
-            fetch(`${process.env.REACT_APP_BACKEND}/users/create`, {
+            fetch(`${process.env.REACT_APP_BACKEND}/user/create`, {
                 method: 'POST',
                 // headers: {"Content-Type": "application/json"},
                 body: formData
@@ -94,6 +94,7 @@ function LoginForm() {
                 <label for="password" className="form-label text-white">Password</label>
                 <input ref={ (elem)=>passwordField = elem } type="password" className="form-control" id="password" placeholder="Enter Your Password here....." aria-describedby="password" />
             </div>
+            
 
             {
                 state !== "sending" && state !== "successful" &&
@@ -127,6 +128,7 @@ function LoginForm() {
                 state === "sending" &&
                 <p>Loading...</p>
             }
+            <ReactLink style={{"margin-left":"290px"}} to="/signup">New here?Create an Account.</ReactLink>
         </div>
     )
 }

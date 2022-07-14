@@ -18,7 +18,7 @@ function App() {
             <LayoutRoute path="/" exact={true} component={Hero} />
             <LayoutRoute path="/about" exact={true} component={AboutUs} />
             <LayoutRoute2 path="/signup" exact={true} component={RegistrationForm}/>
-            <LayoutRoute2 path="/land" exact={true} component={LoginForm}/>
+            <LayoutRoute2 path="/login" exact={true} component={LoginForm}/>
           </Switch>
         </BrowserRouter>
       </React.Fragment>

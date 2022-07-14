@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import{Link as ReactLink} from "react-router-dom"
 const RegistrationForm = () => {
 
     // RegistrationForm can go through 5 states
@@ -35,7 +36,7 @@ const RegistrationForm = () => {
     }
 
     const register = () => {
-
+        console.log(process.env)
 
         const errors = [];
         
@@ -75,7 +76,7 @@ const RegistrationForm = () => {
             formData.append('phoneNumber', phoneNumberField.value);
 
             fetch(
-                `${process.env.REACT_APP_BACKEND}/users/create`,
+                `${process.env.REACT_APP_BACKEND}/user/create`,
                 {
                     method: 'POST',
                     body: formData
@@ -134,7 +135,7 @@ const RegistrationForm = () => {
 
             <label className='text-white' >Do you agree to terms &amp; conditions? *</label>
             <input ref={(element)=>termsAndConditionsCheckbox = element} className="checkbox" name="termsConditions" type="checkbox"/>
-
+            <ReactLink style={{"margin-left":"140px"}} to="/login">Already have a account?</ReactLink>
             <br/><br/>
             {
                 state !== "loading" &&
