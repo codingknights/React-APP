@@ -98,8 +98,8 @@ const RegistrationForm = () => {
             )
             // 2.2 If the submission is successful, set state to "unsucessful"
             .catch(
-                (err) => {
-                    console.log(err);
+                (error) => {
+                    console.log(error.message);
                     setState("unsuccessful");
                 }
             );

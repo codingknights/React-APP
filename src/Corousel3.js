@@ -25,6 +25,19 @@ function Corousel3() {
                                     storage={arr.StorageAmount}
                                     linka={arr.AmazonLink}
                                     linkb={arr.OtherLink}
+                                    ProcessorBrand={arr.ProcessorBrand}
+                                    ProcessorInfo={arr.ProcessorInfo}
+                                    ScreenSize={arr.ScreenSize}
+                                    RefreshRate={arr.RefreshRate}
+                                    ScreenResolution={arr.ScreenResolution}
+                                    GPUBrand={arr.GPUBrand}
+                                    GPUInfo={arr.GPUInfo}
+                                    GPURAM={arr.GPURAM}
+                                    StorageType={arr.StorageType}
+                                    BatteryCapacity={arr.BatteryCapacity}
+                                    Charger={arr.Charger}
+                                    Dimension={arr.Dimension}
+                                    Weight={arr.Weight}
                                 ></Cards>
                             }
                             {loadingState===true && 
