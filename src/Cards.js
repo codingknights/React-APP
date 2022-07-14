@@ -54,16 +54,12 @@ function Cards(props) {
                                                     <td>{props.ScreenSize}</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Display Size</th>
-                                                    <td>{props.ScreenSize}</td>
-                                                </tr>
-                                                <tr>
                                                     <th scope="row">Display Refresh Rate </th>
                                                     <td>{props.RefreshRate}</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Resolution</th>
-                                                    <td>{props.Resolution}</td>
+                                                    <td>{props.ScreenResolution}</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Graphics</th>
