@@ -11,7 +11,7 @@ const closeMenu = () => setClick(false)
 return (
     <div className='header'>
         <nav className='navbar'>
-        <a href='/http://localhost:3001/' className='logo'>
+        <a href='/' className='logo'>
             <h1 className="webname">LAPTOP MAN</h1> </a>
         <div className='hamburger' onClick={handleClick}>
                 {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
@@ -32,7 +32,7 @@ return (
                     <button type="button" style={{"padding-left":"5px"}} class="btn btn-warning">Sign-up</button>
                 </li>
             </ul>
-            <ReactLink to="/signup" s><button tyle={{"margin-left":"220px"}} class="glow-on-hover registration2" >Do we know you?</button></ReactLink>
+            <ReactLink to="/signup" s><button  class="glow-on-hover registration2" >Do we know you?</button></ReactLink>
            
          </nav>
      </div>

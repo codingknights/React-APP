@@ -8,13 +8,16 @@ const HomeLap = require('./HomeLap.js')
 function Corousel3() {
     let [loadingState, setLoadingState] = useState(false);
     return (
-        <div id="carouselExampleControls1" className="carousel slide" >
+        <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
+            <div className="carousel-item active text-white" >
+                Professional laptops
+            </div>
                  
                     {HomeLap.map(
                         function (arr) {
                             return (
-                                <div className="carousel-item active">
+                                <div className="carousel-item ">
                                     { loadingState!==true &&
                                 <Cards
                                     className="d-block w-100 container"

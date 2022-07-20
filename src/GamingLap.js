@@ -1,27 +1,5 @@
 const GamingLap=[
-    {
-        "Gaming-Laptops": "Sr No",
-        "image": "Laptop Image",
-        "Brand": "Brand",
-        "ProductNo": "Product No",
-        "AmazonLink": "Amazon",
-        "OtherLink": "Noon or Other",
-        "ProcessorBrand": "Processor Brand",
-        "ProcessorInfo": "Processor Sub",
-        "ScreenSize": "Screen Size",
-        "RefreshRate": "Screen Refresh",
-        "ScreenResolution": "Screen Resolution",
-        "RAM": "RAM",
-        "GPUBrand": "Graphic Brand",
-        "GPUInfo": "Sub Brand",
-        "GPURAM": "Graphic RAM",
-        "StorageType": "Storage Type",
-        "StorageAmount": "Storage Capacity",
-        "BatteryCapacity": "Battery Capacity",
-        "Charger": "Adapter",
-        "Dimension": "Dimension",
-        "Weight": "Weight"
-    },
+    
     {
         "Gaming-Laptops": "1",
         "image":"https://www.t-shop.com.pk/wp-content/uploads/2022/05/MSI-GE76-12-600x600.jpg",
